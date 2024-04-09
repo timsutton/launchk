@@ -52,12 +52,6 @@ extern "C" {
     pub static _xpc_type_mach_send: _xpc_type_s;
     pub static _xpc_type_mach_recv: _xpc_type_s;
 
-    pub fn xpc_dictionary_set_mach_send(
-        object: xpc_object_t,
-        name: *const c_char,
-        port: mach_port_t,
-    );
-
     // https://opensource.apple.com/source/Libsystem/Libsystem-1213/alloc_once_private.h.auto.html
     pub static _os_alloc_once_table: [_os_alloc_once_s; 10];
 }
